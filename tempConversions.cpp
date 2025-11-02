@@ -33,10 +33,11 @@ void kelvin(int b, double t) {
 }
 void celsius(int b, double t) {
 	//ensuring no invalid celsius input
-	if (t < 0)
+	if (t < -273)
 		std::cout << "Temperature in celsius cannot be below -273. Invalid Input";
 	else
-		#define KELVIN
+		#define CELSIUS
+	#ifdef CELSIUS
 	switch (b) {
 	case 1:
 		//converted to celsius
@@ -54,8 +55,15 @@ void celsius(int b, double t) {
 		std::cout << "Invalid Input!";
 		break;
 	}
+	#endif
 }
 void fahrenheit(int b, double t){
+	//ensuring no invalid fahrenheit inputs
+	if (t < -459.67)
+		std::cout << "Temperature in fahrenheit cannot be below -459.67. Invalid Input";
+	else
+		#define FAHRENHEIT
+	#ifdef FAHRENHEIT
 	switch (b) {
 	case 1:
 		//converted to celsius
@@ -73,4 +81,5 @@ void fahrenheit(int b, double t){
 		std::cout << "Invalid Input!";
 		break;
 	}
+	#endif
 }
