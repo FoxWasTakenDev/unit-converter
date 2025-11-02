@@ -15,15 +15,15 @@ void kelvin(int b, double t) {
 	switch (b) {
 	case 1:
 		//converted to celsius
-		std::cout << kelvinCelsius(t);
+		std::cout << t << " = " << kelvinCelsius(t);
 		break;
 	case 2:
 		//converted to fahrenheit
-		std::cout << kelvinFahrenheit(t);
+		std::cout << t << " = " << kelvinFahrenheit(t);
 		break;
 	case 3:
 		//converted to kelvin
-		std::cout << t;
+		std::cout << t << "K";
 		break;
 	default:
 		std::cout << "Invalid Input!";
@@ -45,11 +45,11 @@ void celsius(int b, double t) {
 		break;
 	case 2:
 		//converted to fahrenheit
-		std::cout << celsiusFahrenheit(t);
+		std::cout << t << " = " << celsiusFahrenheit(t);
 		break;
 	case 3:
 		//converted to kelvin
-		std::cout << celsiusKelvin(t);
+		std::cout << t << " = " << celsiusKelvin(t) << "K";
 		break;
 	default:
 		std::cout << "Invalid Input!";
@@ -67,7 +67,7 @@ void fahrenheit(int b, double t){
 	switch (b) {
 	case 1:
 		//converted to celsius
-		std::cout << fahrenheitCelsius(t);
+		std::cout << t << " = " << fahrenheitCelsius(t);
 		break;
 	case 2:
 		//converted to fahrenheit
@@ -75,7 +75,7 @@ void fahrenheit(int b, double t){
 		break;
 	case 3:
 		//converted to kelvin
-		std::cout << fahrenheitKelvin(t);
+		std::cout << t << " = " << fahrenheitKelvin(t) << "K";
 		break;
 	default:
 		std::cout << "Invalid Input!";
