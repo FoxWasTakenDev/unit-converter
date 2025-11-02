@@ -43,4 +43,7 @@ int main() {
 			std::cout << "Invalid Input!";
 			return 0;
 	}
+	std::cout << "\nEnter any letter to close: ";
+	char x{};
+	std::cin >> x;
 }
