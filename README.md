@@ -7,6 +7,6 @@ main.cpp contains the main user interface. temp.cpp and temp.h contain all the m
 
 Future updates:
 1. Units to be displayed (Eg: 273°C instead of the 273 it prints now)
-2. Length and Speed conversion
+2. Length and Speed conversion and Currency
 
 Enjoy :)
